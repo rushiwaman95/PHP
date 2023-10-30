@@ -8,7 +8,7 @@ pipeline {
             steps {
                 script {
                     sh 'mkdir temp'
-                    sh "scp -r ${WORKSPACE}/* /temp/"
+                    sh "scp -r ${WORKSPACE}/* temp/"
                 }
             }
         }
