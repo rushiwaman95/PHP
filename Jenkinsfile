@@ -7,8 +7,8 @@ pipeline {
         stage('Deploy to Self') {
             steps {
                 script {
-                    sh 'mkdir temp'
-                    sh "scp -r ${WORKSPACE}/* temp/"
+                    
+                    sh "scp -r ${WORKSPACE}/* /home/ec2-user"
                 }
             }
         }
